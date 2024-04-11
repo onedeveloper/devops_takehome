@@ -53,7 +53,7 @@ Seeing as this would be implemented on AWS, going into more specifics probably u
 
 - **Amazon ES**: Provides funtionality equivalent to Elasticsearch and Kibana
 - **Amazon Kinesis Data Firehose**: this would replace the logstash functionality
-- **Cloudwatch**: provides similarl functionality to Prometheus and Graphana combined
+- **Cloudwatch**: provides similar functionality to Prometheus and Graphana combined
   #### alternatively:
   - **Amazon Managed Prometheus**
   - **Amazon Managed Graphana**
