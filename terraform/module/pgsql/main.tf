@@ -21,6 +21,7 @@ resource "aws_security_group" "aurora_sg" {
 
 # Create an Aurora cluster
 resource "aws_rds_cluster" "aurora_cluster" {
+  storage_encrypted = true
   cluster_identifier      = "my-aurora-cluster"
   engine                  = "aurora-postgresql"
   engine_version          = "11.9"
