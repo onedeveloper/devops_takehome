@@ -4,7 +4,7 @@ module "vpc" {
   project_name = var.project_name
   region       = var.region
   vpc_cidr     = var.vpc_cidr
-  tags = var.tags
+  tags         = var.tags
 }
 
 module "ecr" {
@@ -12,5 +12,12 @@ module "ecr" {
 
   project_name = var.project_name
   environment  = var.environment
+  tags         = var.tags
+}
+
+module "vention" {
+  source = "../module/vention"
+
+  members      = var.members
   tags         = var.tags
 }

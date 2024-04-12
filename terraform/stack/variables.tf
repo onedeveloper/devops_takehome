@@ -25,3 +25,9 @@ variable "tags" {
     Environment = ""
   }
 }
+
+variable "members" {
+  description = "A list of users in the group"
+  type        = list(string)
+  default     = []
+}
